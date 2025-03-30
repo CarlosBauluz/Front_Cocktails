@@ -14,7 +14,6 @@ const Page = (props: PageProps<Drinks>) => {
   return (
     <div>
       <CocktailComponent d={props.data} />
-      <p>hola buenas</p>
     </div>
   );
 };

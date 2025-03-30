@@ -9,15 +9,15 @@ const CocktailComponent: FunctionalComponent<Data> = (
   props,
 ) => {
   const drinks = props.d;
-  console.log(drinks);
+  //drinks.map((e) => console.log(e));
   return (
     <div>
-      {drinks.map((a) => {
+      {drinks.map((a) => (
         <div>
-          <p>{a.idDrink}</p>
-          <p>{a.strDrink}</p>
-        </div>;
-      })}
+          <p>El id de tu bebida es {a.idDrink}</p>
+          <p>El nombre de tu bebida es {a.strDrink}</p>
+        </div>
+      ))}
     </div>
   );
 };
